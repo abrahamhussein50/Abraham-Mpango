@@ -1,241 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-</head>
-<body>
-    <h1>Welcome to World of programming</h1>
-
-    <p>Hello World! This is my first HTML document.</p>
-
-    <p>I am currently learning Introduction to Web Technologies.</p>
-</body>
-<h1> Abraham Mpango 202504988</h1>
-<h1> My Top 3 Hobbies</h1>
- <ul>
-    <li>Playing Football</li>
-    <li>Listening to Music</li>
-    <li>Studying</li>
- <section id="about" class="content-section">
-  <h2>About Me</h2>
-  <p>My name is Abraham Mpango, I am a secondyear student at mulungushi university  I enjoy  
-     learning web development because it is one of my hobbies and i would wish to learn more skills about it .</p>
-</section>
-<section id="hobbies" class="content-section"> 
-    
-  <h3>Steps to Improve My Web Skills</h3>
-  <ol>
-    <li>Practise HTML and CSS for 30 minutes every day.</li>
-    <li>Build one small web page each week.</li>
-    <li>Watch one tutorial and ta  ke notes.</li>
-  </ol>
-</section>
-<nav>
-  <a href="#about">About Me</a>
-  <a href="#hobbies">My Hobbies</a>
-  <a href="#photos">My Photos</a>
-  <a href="#media">My Media</a>
-  <a href="#contact">Contact</a>
-  <a href="https://developer.mozilla.org/en-US/docs/Learn" 
-     target="_blank" rel="noopener">MDN Web Docs (learn web development)</a>
-</nav>
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abraham Mpango | ICT251 Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>My Personal Web Page</h1>
-  </header>
-
-  <nav>
-    <!-- navigation links go here -->
+<header>
+  <nav aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning">My Learning Plan</a>
+    <a href="#projects">Projects</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" type="button" aria-pressed="false">Dark theme</button>
   </nav>
-
-  <main>
-    <section id="about" class="content-section">...</section>
-    <section id="hobbies" class="content-section">...</section>
-    <section id="learning" class="content-section">...</section>
-    <section id="photos" class="content-section">...</section>
-    <section id="media" class="content-section">...</section>
-    <section id="contact" class="content-section">...</section>
-  </main>
-
- <section id="photos" class="content-section">
-  <h2>My Photos</h2>
-  <div class="gallery">
-    <figure>
-      <img src="images/photo1.jpg" alt="Sunset over the campus lake">
-      <figcaption>Sunset over the campus lake, taken by me.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/photo2.jpg" alt="My study desk with a laptop and notes">
-      <figcaption>My study desk where I practise coding.</figcaption>
-    </figure>
-    <figure>
-      <img src="images/photo3.jpg" alt="My football boots on the pitch">
-      <figcaption>My football boots before a match.</figcaption>
-    </figure>
+  <div class="hero">
+    <h1>Abraham Mpango</h1>
+    <p class="programme">Computer Science, Mulungushi University | Student No. 202504988</p>
+    <p>I am a second-year student who loves web development. This site shows what I am learning and building.</p>
+    <a class="button" href="#projects">View My Projects</a>
   </div>
-</section>
-<section id="learning" class="content-section">
-  <h2>My Learning Plan</h2>
-  <table>
-    <caption>My weekly web learning plan</caption>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Topic</th>
-        <th>Practice Task</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Monday</td><td>HTML structure</td><td>Build a simple page</td></tr>
-      <tr><td>Wednesday</td><td>CSS styling</td><td>Style the page</td></tr>
-      <tr><td>Friday</td><td>Media and forms</td><td>Add video and a form</td></tr>
-    </tbody>
-  </table>
-</section>
-<section id="media" class="content-section">
-  <h2>My Media</h2>
+</header>
 
-  <h3>Introduction Video</h3>
-  <video controls width="480">
-    <source src="videos/intro.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p><strong>Summary:</strong> In this video I introduce myself, 
-     my programme, and the web skill I want to learn.</p>
-</section>
-  <h3>Audio: My Hobby</h3>
-  <audio controls>
-    <source src="videos/voice.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <p>In this recording I explain why I enjoy my hobby and how it 
-     motivates my studies.</p> 
-     /* Element selectors */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fafafa;
-  margin: 0;
-}
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>My name is Abraham Mpango, and I am a second-year student at Mulungushi University. I enjoy learning web development because it is one of my hobbies, and I would like to learn more skills in it. I am studying how to structure pages with HTML, style them with CSS and add interactivity with JavaScript, and I hope to build useful websites for real people.</p>
+  </section>
 
-/* Header and footer */
-header, footer {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 1rem 2rem;
-}
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Playing Football</li>
+      <li>Listening to Music</li>
+      <li>Studying</li>
+    </ul>
+  </section>
 
-header h1 { margin: 0; }
+  <section id="learning">
+    <h2>My Learning Plan</h2>
+    <ol>
+      <li>Practise HTML and CSS for 30 minutes every day.</li>
+      <li>Build one small web page each week.</li>
+      <li>Watch one tutorial and take notes.</li>
+    </ol>
+    <div class="table-wrap">
+      <table>
+        <caption>Steps to improve my web skills</caption>
+        <thead><tr><th>Activity</th><th>Purpose</th><th>How often</th></tr></thead>
+        <tbody>
+          <tr><td>Practise HTML and CSS</td><td>Build core skills</td><td>30 minutes daily</td></tr>
+          <tr><td>Build a small web page</td><td>Apply what I learn</td><td>Once a week</td></tr>
+          <tr><td>Watch a tutorial and take notes</td><td>Learn new techniques</td><td>Once a week</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Study hours calculator</h3>
+    <form id="hours-form" novalidate>
+      <label for="hours">Hours per day</label>
+      <input id="hours" type="text" inputmode="decimal" required>
+      <span class="error" id="hours-error" role="alert"></span>
+      <label for="days">Days per week (1 to 7)</label>
+      <input id="days" type="text" inputmode="numeric" required>
+      <span class="error" id="days-error" role="alert"></span>
+      <button type="submit">Calculate weekly hours</button>
+    </form>
+    <p id="hours-result" aria-live="polite"></p>
+  </section>
 
-/* Navigation */
-nav {
-  background-color: #34495e;
-  padding: 0.5rem 2rem;
-}
-nav a {
-  color: #ecf0f1;
-  text-decoration: none;
-  margin-right: 1rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-}
-nav a:hover,
-nav a:focus {
-  background-color: #1abc9c;
-  color: #000;
-}
+  <section id="projects">
+    <h2>Projects and Skills</h2>
+    <p>Select a button to show or hide the details.</p>
+    <div class="project-list">
+      <article class="project">
+        <h3>HTML5 structure</h3>
+        <button class="toggle" type="button" aria-expanded="false" aria-controls="p1">Show details</button>
+        <p id="p1" class="details" hidden>I learned to structure a page with header, nav, main, section and footer, and to use headings, lists, tables and forms correctly.</p>
+      </article>
+      <article class="project">
+        <h3>CSS layout</h3>
+        <button class="toggle" type="button" aria-expanded="false" aria-controls="p2">Show details</button>
+        <p id="p2" class="details" hidden>I learned to style a page with colours, spacing and the box model, and to use Grid, Flexbox and media queries so it works on phones.</p>
+      </article>
+      <article class="project">
+        <h3>JavaScript interaction</h3>
+        <button class="toggle" type="button" aria-expanded="false" aria-controls="p3">Show details</button>
+        <p id="p3" class="details" hidden>I learned to respond to clicks and form submissions, validate input, and update the page using the DOM.</p>
+      </article>
+    </div>
+  </section>
 
-/* Repeated section class */
-.content-section {
-  padding: 1rem;
-  margin: 1rem 2rem;
-  border: 1px solid #456;
-  background-color: #fff;
-  border-radius: 6px;
-}
+  <section id="photos">
+    <h2>My Photos</h2>
+    <div class="photo-grid">
+      <figure>
+        <img src="images/photo1.jpg" alt="DESCRIBE what is in photo 1">
+        <figcaption>Caption for photo 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo2.jpg" alt="DESCRIBE what is in photo 2">
+        <figcaption>Caption for photo 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo3.jpg" alt="DESCRIBE what is in photo 3">
+        <figcaption>Caption for photo 3</figcaption>
+      </figure>
+    </div>
+  </section>
 
-/* One unique id selector */
-#hobbies {
-  background-color: #f1f6fa;
-}
+  <section id="media">
+    <h2>My Media</h2>
+    <video controls preload="metadata">
+      <source src="videos/videos/videos/myvideo.mp4" type="video/mp4" width="320" height="150">
+      Your browser does not support video.
+    </video>
+    <p>This short video is a clip I recorded myself and added to my portfolio. EDIT THIS: write one more sentence about what it shows.</p>
 
-/* Images and video scale */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+    <audio controls preload="metadata">
+      <source src="videos/audio.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+    <p>This audio is a short recording I made for my portfolio. EDIT THIS: write one more sentence about what it is.</p>
+  </section>
 
-/* Photo gallery layout */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-figure {
-  margin: 0;
-  text-align: center;
-}
-figcaption {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 0.3rem;
-}
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="notice"><strong>Browser demonstration only — no message is sent.</strong></p>
+    <form id="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+      <span class="error" id="name-error" role="alert"></span>
 
-/* Table */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 1rem;
-}
-caption {
-  caption-side: top;
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-}
-th, td {
-  border: 1px solid #999;
-  padding: 0.5rem;
-  text-align: left;
-}
-th { background-color: #dfe6e9; }
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+      <span class="error" id="email-error" role="alert"></span>
 
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-label { margin-top: 0.75rem; font-weight: bold; }
-input, select, textarea {
-  padding: 0.4rem;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-button {
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #1abc9c;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-button:hover,
-button:focus {
-  background-color: #16a085;
-}
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <span class="error" id="message-error" role="alert"></span>
+
+      <button type="submit">Validate form</button>
+    </form>
+    <div id="preview" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Abraham Mpango. <a href="https://github.com/abrahamhussein50/Abraham-Mpango.git">View Source on GitHub</a></p>
+</footer>
+</body>
+</html>
